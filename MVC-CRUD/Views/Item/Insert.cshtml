@@ -1,0 +1,14 @@
+﻿@model ItemTable
+@{
+
+}
+
+<h1>新增資料</h1>
+
+<form method="post">
+    <label asp-for="ItemName">輸入事項名稱:</label>
+    <input type="text" asp-for="ItemName">
+
+    <input type="submit" class="btn btn-outline-primary btn-sm" value="送出">
+    <a href="/Item/Index" class="btn btn-outline-danger btn-sm">返回</a>
+</form>

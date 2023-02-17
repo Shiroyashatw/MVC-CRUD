@@ -1,0 +1,12 @@
+﻿@model ItemTable
+@{
+}
+
+<h1>刪除資料</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="ItemId" value="@Model.ItemId">
+    <p>事項名稱:@Model.ItemName</p>
+    <input type="submit" class="btn btn-outline-primary btn-sm" value="刪除">
+    <a href="/Item/Index" class="btn btn-outline-danger btn-sm">返回</a>
+</form>
